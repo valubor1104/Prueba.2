@@ -1,0 +1,24 @@
+{
+  "name": "prueba.2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:report": "playwright test --reporter=html && playwright show-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valubor1104/Prueba.2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valubor1104/Prueba.2/issues"
+  },
+  "homepage": "https://github.com/valubor1104/Prueba.2#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  }
+}
