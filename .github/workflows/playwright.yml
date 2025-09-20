@@ -8,7 +8,8 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-  steps:
+
+    steps:
       - name: Checkout código
         uses: actions/checkout@v4
 
@@ -26,7 +27,8 @@ jobs:
 
       - name: Ejecutar pruebas Playwright
         run: npx playwright test --reporter=list
-     # Sube el reporte HTML, screenshots y videos como artefactos
+
+      # Sube el reporte HTML, screenshots y videos como artefactos
       - name: Subir artefactos (reporte, screenshots, videos, traces)
         if: always()
         uses: actions/upload-artifact@v4
